@@ -18,5 +18,7 @@ class ELOsystem extends PluginBase implements Listener {
     public function onDisable(){
       $this->getLogger()->info("KronosELO by AL3XPI disabled");
     }
+    public function onCommand(CommandSender $sender,Command $cmd,string $label,array $args) : bool{
+        if($cmd->getName() == "elo"){ 
+     $sender->sendMessage("This is a Test");
 }
-    
